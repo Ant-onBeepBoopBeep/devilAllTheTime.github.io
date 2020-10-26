@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(8, 5, 0);
+  font-family:  'Oswald', sans-serif;
+  font-size: 35px;
+  text-align: left;
+  padding-left: 35px;
+}
+body {
+  margin: 0;
+  background: radial-gradient(#BFD6E2 1px, rgba(255,255,255,0) 2px);
+  background-size: 10px 10px;
+}
+h1{
+  font-family: 'Cinzel', serif;
+  text-align: right;
+  padding-right: 270px;
+}
+h2{
+    color: rgb(8, 5, 0);
+    font-family:  'Oswald', sans-serif;
+    text-align: center;
+    font-size: 45px;
+    padding-top: 180px;
+}
+p{
+  color: rgb(8, 5, 0);
+  font-family:  'Oswald', sans-serif;
+  font-size: 35px;
+  text-align: left;
+  padding-left: 35px;  
+}
+.header{
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 70px;
+    padding-top: 0 ;
+    float: left;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    padding-left: 30px;
+}
+.slide_show{
+  /* background-color: #b6b0a2;*/
+    max-height: 500px;
+}
+
+.fotorama{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 80%;
+    height: 30%;
+    margin: 0;
+}
+/*header menu*/
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  display: block;
+  text-decoration: none;
+  outline: none; 
+}
+
+.topmenu > li {
+  display: inline-block;
+  position: relativece;
+}
+.topmenu > li > a {
+  font-family: 'Oswald', sans-serif;
+  height: 70px;
+  line-height: 70px;
+  color: #000000;
+  text-transform: uppercase;
+  transition: .4s ease-in-out;
+}
+.down:after {
+  margin-right: 8px;
+  font-family: 'Oswald', sans-serif;
+}
+.topmenu li a:hover {color: #E6855F;}
+.submenu {
+height: 122px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 2px solid #003559;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  width: 600px;
+  transform: perspective(600px) rotateX(-90deg);
+  transform-origin: 0% 0%;
+  transition: .6s ease-in-out;
+  left: 15px;
+}
+.topmenu > li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+    transform: perspective(600px) rotateX(0deg);
+}
+.submenu li a {
+  color: #7f7f7f;
+  font-size: 35px;
+  line-height: 36px;
+  padding: 0 25px;
+  font-family: 'Oswald', sans-serif;
+  transition: .4s ease-in-out;
+}
+/*MainPage*/
+.mainText{
+  position: absolute;
+  width: 900px;
+  left: 1400px ;
+  height: 700px;;
+}
